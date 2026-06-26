@@ -1,99 +1,721 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background: #121212;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+/*==========================
+ GOOGLE FONT
+==========================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*==========================
+ RESET
+==========================*/
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
-/* Main Container */
-.container {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:#0d1117;
+
+color:white;
+
 }
 
-/* Header */
-header {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #0066ff, #ff6600);
+/*==========================
+ NAVBAR
+==========================*/
+
+nav{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+padding:22px 10%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:rgba(13,17,23,.92);
+
+backdrop-filter:blur(15px);
+
+z-index:999;
+
+border-bottom:1px solid rgba(255,255,255,.05);
+
 }
 
-header h1 {
-    font-size: 3rem;
-    margin: 0;
+.logo{
+
+font-size:30px;
+
+font-weight:700;
+
+color:white;
+
 }
 
-header p {
-    font-size: 1.2rem;
-    margin-top: 10px;
+.logo span{
+
+color:#ff7b00;
+
 }
 
-/* Sections */
-section {
-    background: #1e1e1e;
-    margin: 20px 0;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+nav ul{
+
+display:flex;
+
+list-style:none;
+
+gap:35px;
+
 }
 
-h2 {
-    color: #ff6600;
-    border-bottom: 2px solid #0066ff;
-    padding-bottom: 10px;
+nav a{
+
+text-decoration:none;
+
+color:white;
+
+font-weight:500;
+
+transition:.3s;
+
 }
 
-/* Skills */
-ul {
-    list-style: none;
-    padding: 0;
+nav a:hover{
+
+color:#ff7b00;
+
 }
 
-ul li {
-    background: #2a2a2a;
-    margin: 8px 0;
-    padding: 12px;
-    border-left: 4px solid #0066ff;
-    border-radius: 5px;
+/*==========================
+ HERO
+==========================*/
+
+.hero{
+
+min-height:100vh;
+
+padding:140px 10% 80px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:60px;
+
 }
 
-/* Portfolio Images */
-.portfolio img {
-    width: 100%;
-    max-width: 300px;
-    margin: 10px;
-    border-radius: 10px;
-    transition: transform 0.3s;
+.hero-text{
+
+flex:1;
+
 }
 
-.portfolio img:hover {
-    transform: scale(1.05);
+.hero-text h4{
+
+font-size:22px;
+
+color:#9ca3af;
+
+margin-bottom:10px;
+
 }
 
-/* Buttons */
-.btn {
-    display: inline-block;
-    background: #ff6600;
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
-    border-radius: 6px;
-    margin-top: 10px;
-    transition: 0.3s;
+.hero-text h1{
+
+font-size:70px;
+
+line-height:1.1;
+
+margin-bottom:15px;
+
 }
 
-.btn:hover {
-    background: #0066ff;
+.hero-text h1 span{
+
+color:#ff7b00;
+
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #aaa;
+.hero-text h3{
+
+font-size:30px;
+
+font-weight:500;
+
+color:#4da3ff;
+
+margin-bottom:25px;
+
 }
+
+.hero-text p{
+
+font-size:18px;
+
+line-height:1.8;
+
+max-width:650px;
+
+color:#c9d1d9;
+
+margin-bottom:35px;
+
+}
+
+/*==========================
+ BUTTONS
+==========================*/
+
+.buttons{
+
+display:flex;
+
+gap:20px;
+
+}
+
+.btn1{
+
+background:#ff7b00;
+
+color:white;
+
+padding:16px 35px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.4s;
+
+}
+
+.btn1:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 0 25px #ff7b00;
+
+}
+
+.btn2{
+
+border:2px solid #4da3ff;
+
+padding:16px 35px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+color:white;
+
+font-weight:600;
+
+transition:.4s;
+
+}
+
+.btn2:hover{
+
+background:#4da3ff;
+
+}
+
+/*==========================
+ PROFILE IMAGE
+==========================*/
+
+.hero-image{
+
+flex:1;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.hero-image img{
+
+width:380px;
+
+height:380px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:8px solid #ff7b00;
+
+box-shadow:
+
+0 0 30px rgba(255,123,0,.5),
+
+0 0 80px rgba(77,163,255,.3);
+
+}
+
+/*==========================
+ SECTION TITLE
+==========================*/
+
+section{
+
+padding:100px 10%;
+
+}
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:70px;
+
+}
+
+.section-title h2{
+
+font-size:42px;
+
+margin-bottom:10px;
+
+}
+
+.section-title p{
+
+color:#9ca3af;
+
+}
+
+/*==========================
+ ABOUT
+==========================*/
+
+.about{
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:40px;
+
+align-items:center;
+
+}
+
+.about-text{
+
+background:#161b22;
+
+padding:40px;
+
+border-radius:20px;
+
+}
+
+.about-text h3{
+
+font-size:30px;
+
+margin-bottom:20px;
+
+color:#4da3ff;
+
+}
+
+.about-text p{
+
+line-height:2;
+
+color:#c9d1d9;
+
+margin-bottom:20px;
+
+}
+
+.about-card{
+
+background:#161b22;
+
+padding:40px;
+
+border-radius:20px;
+
+border-left:5px solid #ff7b00;
+
+}
+
+.about-card h3{
+
+margin-bottom:25px;
+
+color:#ff7b00;
+
+}
+/*==========================
+PORTFOLIO
+==========================*/
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+overflow:hidden;
+
+border-radius:20px;
+
+background:#161b22;
+
+box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 15px 40px rgba(77,163,255,.25);
+
+}
+
+.card img{
+
+width:100%;
+
+height:260px;
+
+object-fit:cover;
+
+display:block;
+
+transition:.5s;
+
+}
+
+.card:hover img{
+
+transform:scale(1.08);
+
+}
+
+/*==========================
+SKILLS
+==========================*/
+
+.skills-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.skill{
+
+background:#161b22;
+
+padding:35px;
+
+border-radius:18px;
+
+transition:.35s;
+
+border-top:4px solid transparent;
+
+}
+
+.skill:hover{
+
+transform:translateY(-8px);
+
+border-top:4px solid #ff7b00;
+
+box-shadow:0 10px 35px rgba(255,123,0,.18);
+
+}
+
+.skill h3{
+
+margin-bottom:18px;
+
+font-size:24px;
+
+color:#4da3ff;
+
+}
+
+.skill p{
+
+line-height:1.8;
+
+color:#c9d1d9;
+
+}
+
+/*==========================
+RESUME
+==========================*/
+
+.resume-box{
+
+background:linear-gradient(135deg,#161b22,#1f2937);
+
+padding:70px 40px;
+
+text-align:center;
+
+border-radius:25px;
+
+}
+
+.resume-box h2{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+}
+
+.resume-box p{
+
+font-size:18px;
+
+color:#c9d1d9;
+
+margin-bottom:35px;
+
+}
+
+.resume-btn{
+
+display:inline-block;
+
+background:#ff7b00;
+
+color:white;
+
+padding:18px 45px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:600;
+
+font-size:18px;
+
+transition:.35s;
+
+}
+
+.resume-btn:hover{
+
+background:#4da3ff;
+
+transform:translateY(-5px);
+
+}
+
+/*==========================
+CONTACT
+==========================*/
+
+.contact-box{
+
+background:#161b22;
+
+padding:50px;
+
+border-radius:20px;
+
+text-align:center;
+
+}
+
+.contact-box p{
+
+color:#9ca3af;
+
+margin-top:20px;
+
+}
+
+.contact-box h3{
+
+margin-top:10px;
+
+font-size:28px;
+
+color:white;
+
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+footer{
+
+padding:35px;
+
+text-align:center;
+
+background:#090d13;
+
+border-top:1px solid rgba(255,255,255,.05);
+
+}
+
+footer p{
+
+color:#9ca3af;
+
+line-height:2;
+
+}
+
+/*==========================
+SCROLLBAR
+==========================*/
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#0d1117;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#ff7b00;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#4da3ff;
+
+}
+
+/*==========================
+RESPONSIVE
+==========================*/
+
+@media(max-width:900px){
+
+nav{
+
+padding:18px 6%;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+nav ul{
+
+gap:18px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.hero{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+padding-top:180px;
+
+}
+
+.hero-text h1{
+
+font-size:52px;
+
+}
+
+.hero-text h3{
+
+font-size:24px;
+
+}
+
+.hero-image img{
+
+width:260px;
+
+height:260px;
+
+}
+
+.buttons{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.about{
+
+grid-template-columns:1fr;
+
+}
+
+section{
+
+padding:80px 6%;
+
+}
+
+.resume-box h2{
+
+font-size:34px;
+
+}
+
+    }
