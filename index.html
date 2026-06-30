@@ -11,25 +11,35 @@
 
 <link rel="stylesheet" href="style.css">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
 <!-- NAVIGATION -->
 
-<nav>
+<header>
+
+<nav class="navbar">
 
 <div class="logo">
 
-Daniel <span>James</span>
+Daniel<span>James</span>
 
 </div>
 
-<ul>
+<ul class="nav-links">
 
-<li><a href="#">Home</a></li>
+<li><a href="#home">Home</a></li>
 
 <li><a href="#about">About</a></li>
+
+<li><a href="#services">Services</a></li>
 
 <li><a href="#portfolio">Portfolio</a></li>
 
@@ -41,35 +51,42 @@ Daniel <span>James</span>
 
 </nav>
 
+</header>
+
 <!-- HERO -->
 
-<section class="hero">
+<section class="hero" id="home">
 
-<div class="hero-text">
+<div class="hero-content">
 
 <h4>Hello, I'm</h4>
 
 <h1>Daniel <span>James</span></h1>
 
-<h3>Graphic Designer & Content Creator</h3>
+<h3>Graphic Designer • IT Support • Content Creator</h3>
 
 <p>
 
-I create modern brand identities, social media graphics,
-
-marketing materials and engaging digital experiences.
-
-Passionate about creativity, storytelling and helping
-
-brands stand out.
+I create premium visual identities, engaging social media graphics,
+and modern digital experiences while also providing computer
+hardware/software support and leveraging AI tools to improve
+creativity and productivity.
 
 </p>
 
-<div class="buttons">
+<div class="hero-buttons">
 
-<a href="#portfolio" class="btn1">View My Designs</a>
+<a href="#portfolio" class="btn-primary">
 
-<a href="#contact" class="btn2">Contact Me</a>
+View Portfolio
+
+</a>
+
+<a href="Resume.pdf" class="btn-secondary">
+
+View Resume
+
+</a>
 
 </div>
 
@@ -87,29 +104,38 @@ brands stand out.
 
 <section id="about">
 
-<div class="section-title">
+<div class="section-heading">
 
-<h2>About Me</h2>
+<span>ABOUT ME</span>
+
+<h2>Who I Am</h2>
 
 </div>
 
-<div class="about">
+<div class="about-container">
 
 <div class="about-text">
 
-<h3>Who I Am</h3>
-
 <p>
 
-I'm a passionate Graphic Designer and Content Creator who loves creating visuals that leave lasting impressions.
-
-I specialize in branding, social media graphics, flyers, posters and digital content.
+I'm a passionate Graphic Designer, IT Support Personnel,
+and Content Creator with experience in branding,
+social media design, print media, and digital marketing.
 
 </p>
 
 <p>
 
-Apart from design, I also enjoy creating singing and guitar content while continuously improving my creative skills.
+I also have hands-on experience in computer hardware and software maintenance,
+software installation, troubleshooting, and system configuration.
+
+</p>
+
+<p>
+
+I'm constantly learning new technologies,
+especially Artificial Intelligence,
+to improve productivity and create smarter workflows.
 
 </p>
 
@@ -117,27 +143,101 @@ Apart from design, I also enjoy creating singing and guitar content while contin
 
 <div class="about-card">
 
-<h3>Experience</h3>
+<h3>Quick Facts</h3>
+
+<ul>
+
+<li>Graphic Designer</li>
+
+<li>Brand Identity Designer</li>
+
+<li>IT Support</li>
+
+<li>Content Creator</li>
+
+<li>Microsoft Office</li>
+
+<li>Prompt Engineer</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="section-heading">
+
+<span>WHAT I DO</span>
+
+<h2>Services</h2>
+
+</div>
+
+<div class="service-grid">
+
+<div class="service-box">
+
+<h3>Graphic Design</h3>
 
 <p>
 
-✔ Branding Design
+Creative posters,
+flyers,
+social media graphics,
+banners and promotional materials.
 
-<br><br>
+</p>
 
-✔ Logo Design
+</div>
 
-<br><br>
+<div class="service-box">
 
-✔ Social Media Design
+<h3>Brand Identity</h3>
 
-<br><br>
+<p>
 
-✔ Microsoft Office
+Complete branding systems including
+logos,
+business cards,
+letterheads,
+brand guides and mockups.
 
-<br><br>
+</p>
 
-✔ Content Creation
+</div>
+
+<div class="service-box">
+
+<h3>IT Support</h3>
+
+<p>
+
+Computer troubleshooting,
+hardware/software maintenance,
+installation,
+updates and system setup.
+
+</p>
+
+</div>
+
+<div class="service-box">
+
+<h3>AI Solutions</h3>
+
+<p>
+
+AI Model Utilization &
+Prompt Engineering
+for creative workflows,
+content generation
+and productivity.
 
 </p>
 
@@ -146,42 +246,136 @@ Apart from design, I also enjoy creating singing and guitar content while contin
 </div>
 
 </section>
-  <!-- PORTFOLIO -->
+<!-- PORTFOLIO -->
 
 <section id="portfolio">
 
-<div class="section-title">
+<div class="section-heading">
 
-<h2>My Portfolio</h2>
+<span>MY WORK</span>
 
-<p>A selection of some of my favorite projects.</p>
+<h2>Graphic Designs</h2>
+
+<p>Swipe left or right to explore my projects.</p>
 
 </div>
 
-<div class="gallery">
+<div class="horizontal-gallery">
 
-<div class="card">
-<img src="images/design1.jpg" alt="">
+<div class="portfolio-item">
+<img src="images/graphic1.jpg" alt="">
+<div class="overlay">
+<h3>Music Festival Poster</h3>
+<p>Poster Design</p>
+</div>
 </div>
 
-<div class="card">
-<img src="images/design2.jpg" alt="">
+<div class="portfolio-item">
+<img src="images/graphic2.jpg" alt="">
+<div class="overlay">
+<h3>Church Flyer</h3>
+<p>Print Design</p>
+</div>
 </div>
 
-<div class="card">
-<img src="images/design3.jpg" alt="">
+<div class="portfolio-item">
+<img src="images/graphic3.jpg" alt="">
+<div class="overlay">
+<h3>Food Campaign</h3>
+<p>Social Media</p>
+</div>
 </div>
 
-<div class="card">
-<img src="images/design4.jpg" alt="">
+<div class="portfolio-item">
+<img src="images/graphic4.jpg" alt="">
+<div class="overlay">
+<h3>Sports Banner</h3>
+<p>Advertisement</p>
+</div>
 </div>
 
-<div class="card">
-<img src="images/design5.jpg" alt="">
+<div class="portfolio-item">
+<img src="images/graphic5.jpg" alt="">
+<div class="overlay">
+<h3>Quote Design</h3>
+<p>Instagram Post</p>
+</div>
 </div>
 
-<div class="card">
-<img src="images/design6.jpg" alt="">
+<div class="portfolio-item">
+<img src="images/graphic6.jpg" alt="">
+<div class="overlay">
+<h3>Book Cover</h3>
+<p>Cover Design</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- BRAND IDENTITY -->
+
+<section id="branding">
+
+<div class="section-heading">
+
+<span>BRAND SHOWCASE</span>
+
+<h2>Brand Identity Designs</h2>
+
+<p>Complete branding projects for different businesses.</p>
+
+</div>
+
+<div class="horizontal-gallery">
+
+<div class="portfolio-item">
+<img src="images/brand1.jpg" alt="">
+<div class="overlay">
+<h3>Royal Taste</h3>
+<p>Restaurant Branding</p>
+</div>
+</div>
+
+<div class="portfolio-item">
+<img src="images/brand2.jpg" alt="">
+<div class="overlay">
+<h3>Nova Fashion</h3>
+<p>Fashion Brand</p>
+</div>
+</div>
+
+<div class="portfolio-item">
+<img src="images/brand3.jpg" alt="">
+<div class="overlay">
+<h3>Prime Homes</h3>
+<p>Real Estate</p>
+</div>
+</div>
+
+<div class="portfolio-item">
+<img src="images/brand4.jpg" alt="">
+<div class="overlay">
+<h3>Fresh Basket</h3>
+<p>Food Brand</p>
+</div>
+</div>
+
+<div class="portfolio-item">
+<img src="images/brand5.jpg" alt="">
+<div class="overlay">
+<h3>Glow Beauty</h3>
+<p>Beauty Brand</p>
+</div>
+</div>
+
+<div class="portfolio-item">
+<img src="images/brand6.jpg" alt="">
+<div class="overlay">
+<h3>Vertex Tech</h3>
+<p>Technology Brand</p>
+</div>
 </div>
 
 </div>
@@ -192,78 +386,38 @@ Apart from design, I also enjoy creating singing and guitar content while contin
 
 <section id="skills">
 
-<div class="section-title">
+<div class="section-heading">
 
-<h2>Skills</h2>
+<span>MY SKILLS</span>
+
+<h2>Professional Skills</h2>
 
 </div>
 
 <div class="skills-grid">
 
-<div class="skill">
-
+<div class="skill-box">
 <h3>Graphic Design</h3>
-
-<p>
-Professional branding, logo design,
-flyers, posters and social media graphics.
-</p>
-
 </div>
 
-<div class="skill">
-
+<div class="skill-box">
 <h3>Brand Identity</h3>
-
-<p>
-Creating memorable identities that
-help businesses stand out.
-</p>
-
 </div>
 
-<div class="skill">
-
-<h3>Content Creation</h3>
-
-<p>
-Creative storytelling through visuals,
-music and engaging digital content.
-</p>
-
+<div class="skill-box">
+<h3>IT Support</h3>
 </div>
 
-<div class="skill">
-
+<div class="skill-box">
 <h3>Microsoft Office</h3>
-
-<p>
-Word, Excel and PowerPoint
-for professional documentation.
-</p>
-
 </div>
 
-<div class="skill">
-
-<h3>Creative Thinking</h3>
-
-<p>
-Turning ideas into modern,
-beautiful visual experiences.
-</p>
-
+<div class="skill-box">
+<h3>Content Creation</h3>
 </div>
 
-<div class="skill">
-
-<h3>Problem Solving</h3>
-
-<p>
-Designing solutions that communicate
-clearly and effectively.
-</p>
-
+<div class="skill-box">
+<h3>AI Model Utilization & Prompt Engineering</h3>
 </div>
 
 </div>
@@ -280,14 +434,14 @@ clearly and effectively.
 
 <p>
 
-Download my resume to learn more about
-my skills, education and experience.
+Download my resume to learn more about my experience,
+skills and qualifications.
 
 </p>
 
-<a href="Resume.pdf" class="resume-btn">
+<a href="Resume.pdf" class="resume-button">
 
-View My Resume
+View Resume
 
 </a>
 
@@ -299,27 +453,23 @@ View My Resume
 
 <section id="contact">
 
-<div class="section-title">
+<div class="section-heading">
 
-<h2>Get In Touch</h2>
+<span>CONTACT</span>
 
-<p>
-
-Let's work together on your next project.
-
-</p>
+<h2>Let's Work Together</h2>
 
 </div>
 
-<div class="contact-box">
+<div class="contact-card">
 
-<p>Email</p>
+<h3>Email</h3>
 
-<h3>your@email.com</h3>
+<p>your@email.com</p>
 
-<p>Phone</p>
+<h3>Phone</h3>
 
-<h3>+234 XXX XXX XXXX</h3>
+<p>+234 XXX XXX XXXX</p>
 
 </div>
 
